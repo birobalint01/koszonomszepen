@@ -1,0 +1,54 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource database {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+
+model helyszin {
+
+  id        Int     @id @default(autoincrement())
+
+  nev       String? @db.VarChar(50)
+
+  longitude Float?  @db.Float
+
+  latitude  Float?  @db.Float
+
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model esemenyek {
+
+  id                 Int       @id @default(autoincrement())
+
+  nev                String?   @db.VarChar(50)
+
+  datum              DateTime? @db.DateTime(0)
+
+  leiras             String?   @db.VarChar(50)
+
+  idopont            Int?
+
+  helyszin_azonosito Int?
+
+  szervezo_azonosito Int?
+
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model szervezo {
+
+  id          Int     @id @default(autoincrement())
+
+  nev         String? @db.VarChar(50)
+
+  email       String? @db.VarChar(50)
+
+  telefonszam Int?
+
+}

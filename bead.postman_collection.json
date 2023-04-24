@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "4f8ad389-c721-4aa1-9415-4073d8846634",
+		"name": "bead",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "esemenyek",
+			"item": [
+				{
+					"name": "esemenyek",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5173/api/esemenyek",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5173",
+							"path": [
+								"api",
+								"esemenyek"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nev",
+									"value": "ferenc\n",
+									"type": "default"
+								},
+								{
+									"key": "datum",
+									"value": "2018-01-10",
+									"type": "default"
+								},
+								{
+									"key": "leiras",
+									"value": "nem",
+									"type": "default"
+								},
+								{
+									"key": "idopont",
+									"value": "1511",
+									"type": "default"
+								},
+								{
+									"key": "helyszin_azonosito",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "szervezo_azonosito",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5173/api/esemenyek/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5173",
+							"path": [
+								"api",
+								"esemenyek",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "helyszin",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5173/api/helyszin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5173",
+							"path": [
+								"api",
+								"helyszin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "nev",
+									"value": "kecskes janos",
+									"type": "default"
+								},
+								{
+									"key": "longitude",
+									"value": "4.2",
+									"type": "default"
+								},
+								{
+									"key": "latitude",
+									"value": "9.9",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5173/api/helyszin/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5173",
+							"path": [
+								"api",
+								"helyszin",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "nev",
+									"value": "asdwgwg",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "jet4iptje",
+									"type": "default"
+								},
+								{
+									"key": "telefonszam",
+									"value": "06303553353",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5173/api/szervezo/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5173",
+							"path": [
+								"api",
+								"szervezo",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
